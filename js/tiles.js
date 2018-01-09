@@ -419,16 +419,16 @@ const door = {
     //mine
     vector_pattern: Object.assign({}, OpenDoors, {
         canEnterFromTheRight() {
-            return false;
+            return true;
         },
         canLeaveToTheRight() {
-            return false;
+            return true;
         },
         canEnterFromTheTop: function(player) {
-            return false;
+            return true;
         },
         canLeaveToTheTop: function(player) {
-            return false;
+            return true;
         },
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/wall/topChess.svg");
